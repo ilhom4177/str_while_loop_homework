@@ -13,7 +13,7 @@ def main(s):
         if s[i] != "a" and s[i] != "e" and s[i] != "u" and s[i] != "i" and s[i] != "o":
             c += 1
         
-        elif s[i] == "A" and s[i] != "E" and s[i] != "U" and s[i] != "I" and s[i] != "O":
+        elif s[c] == "A" and s[i] != "E" and s[i] != "U" and s[i] != "I" and s[i] != "O":
             c += 1
         i += 1
     return c

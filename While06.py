@@ -7,14 +7,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    c = 0
+    counter = 0
     i = 0
     while i < len(s):
         if s[i] != "a" and s[i] != "e" and s[i] != "u" and s[i] != "i" and s[i] != "o":
-            c += 1
-        
-        elif s[c] == "A" and s[i] != "E" and s[i] != "U" and s[i] != "I" and s[i] != "O":
-            c += 1
+            counter += 1
+        elif s[i] == "A" and s[i] != "E" and s[i] != "U" and s[i] != "I" and s[i] != "O":
+            counter += 1
         i += 1
-    return c
-print(main('ouiuo'))
+    return counter

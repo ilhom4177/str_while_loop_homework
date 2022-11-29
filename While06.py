@@ -7,12 +7,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    x=0
-    y = 0
-    while x<len(s):
-        if s[x].isalpha():
-            if s[x]!='a' and s[x]!='e' and s[x]!='i' and s[x]!='o' and s[x]!='u' and s[x]!='A' and s[x]!='E' and s[x]!='I' and s[x]!='U' and s[x]!='U':
-                y += 1
-            x+=1
-    return y
+    i=0
+    n = 0
+    while i<len(s):
+        if s[i].isalpha():
+            if  s[i].lower()!='a' and s[i].lower()!='e' and s[i].lower()!='i' and s[i].lower()!='o' and s[i].lower()!='u':
+                n+=1
+        i+=1
+    return n
 print(main("CodeschoolUz"))
+
+

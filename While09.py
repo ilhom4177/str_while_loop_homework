@@ -6,11 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    x=0
-    k=0
-    while x<len(s):
-        k+=int(s[x])
-        x+=1
-    return k
-
-print(main("12"))
+    i=0
+    sum=0
+    while i<len(s):
+        if s[i].isdigit():
+            sum=sum+int(s[i])
+        i+=1
+    return sum
+print(main('987654'))

@@ -6,4 +6,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    x=0
+    y = 0
+    while x<len(s):
+        if int(s[x])%2==0:
+            y += 1
+        x+=1
+    return y
+print(main("123456"))
